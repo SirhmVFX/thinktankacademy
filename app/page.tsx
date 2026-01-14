@@ -6,7 +6,7 @@ import WhyThinkTank from "./navigations/whyThinkTank";
 
 export default function Home() {
   return (
-    <nav className="flex items-center justify-between bg-blue-900 px-8 py-4 text-white">
+    <nav className="flex items-center justify-between fixed bg-blue-900 px-8 py-4 text-white">
 
       <div className="text-xl font-bold">
         ThinkTank
