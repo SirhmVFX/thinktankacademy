@@ -23,11 +23,11 @@ export default function PartnerNav() {
           <ul>
             <li>
               <Link
-                href="/our-story"
+                href="/sponsor-a-learner"
                 className="block px-4 py-3 hover:bg-blue-100"
                 onClick={() => setOpen(false)}
               >
-                Sponsor a Learner 
+                Sponsor a Learner
               </Link>
             </li>
 

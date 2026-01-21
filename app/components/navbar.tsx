@@ -7,19 +7,30 @@ import WhyThinkTank from "./navigations/whyThinkTank";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 z-50 w-full flex items-center justify-between bg-blue-900 px-8 py-4 text-white">
-      
-      <div className="text-xl font-bold">
+    <nav className="fixed top-0 z-50 w-full flex items-center justify-between  px-8 py-4 text-white">
+      <Link href={"/"} className="text-xl font-bold">
         ThinkTank
-      </div>
+      </Link>
 
       <ul className="hidden md:flex items-center gap-8 text-sm">
-        <li className="cursor-pointer hover:text-gray-300"><Link href="/">Home</Link></li>
-        <li><SchoolsDropdown /></li>
-        <li><WhyThinkTank /></li>
-        <li><PartnerNav /></li>
-        <li><ResourcesNav /></li>
-        <li><PoliciesNav /></li>
+        <li className="cursor-pointer hover:text-gray-300">
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <SchoolsDropdown />
+        </li>
+        <li>
+          <WhyThinkTank />
+        </li>
+        <li>
+          <PartnerNav />
+        </li>
+        <li>
+          <ResourcesNav />
+        </li>
+        <li>
+          <PoliciesNav />
+        </li>
       </ul>
 
       <div className="flex items-center gap-6">

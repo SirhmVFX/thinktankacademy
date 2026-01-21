@@ -6,25 +6,27 @@ import WhyThinkTankSchool from "./components/home/why-thinkTank-school";
 export default function Home() {
   return (
     <div>
-      <div className="pt-16">
+      <div className="">
         <section
           className="relative flex min-h-[90vh] items-center bg-cover bg-center"
           style={{
-            backgroundImage: `url(/images/heroImg.jpg)`
+            backgroundImage: `url(/images/bgg.jpg)`,
           }}
         >
-          <div className="absolute inset-0 bg-blue-900/80"></div>
+          <div className="absolute inset-0 "></div>
 
-          <div className="relative z-10 max-w-4xl px-8 text-white">
-            <h1 className="mb-6 text-4xl font-extrabold leading-tight md:text-6xl">
-              Africa’s Most Innovative <br /> Online School
+          <div className="relative z-10 max-w-4xl mx-auto px-8 text-white flex flex-col items-center">
+            <h1 className="mb-6 text-7xl font-extrabold leading-tight text-center md:text-6xl">
+              Africa’s Most Innovative Online School
             </h1>
 
-            <p className="mb-8 max-w-2xl text-lg text-gray-200 md:text-xl">
+            <p className="mb-8  text-lg text-center text-gray-200 md:text-xl">
               ThinkTank gives you career clarity and global relevance, your way.
-              Learn through flexible <span className="font-semibold">Nano-Diplomas</span> you can
-              complete fast, or immersive <span className="font-semibold">Diplomas</span> designed
-              to launch you into international opportunities.
+              Learn through flexible{" "}
+              <span className="font-semibold">Nano-Diplomas</span> you can
+              complete fast, or immersive{" "}
+              <span className="font-semibold">Diplomas</span> designed to launch
+              you into international opportunities.
             </p>
 
             <button className="rounded-md bg-blue-400 px-8 py-4 text-lg font-semibold text-white hover:bg-blue-500 transition">
@@ -49,25 +51,35 @@ export default function Home() {
                 <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
                   <span className="text-blue-600 text-xl">💙</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Nano-Diploma</h3>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  Nano-Diploma
+                </h3>
               </div>
 
               <p className="text-gray-700 mb-8 leading-relaxed">
-                Self-paced programs that let you go deeper into a focused skill. Earn recognized certificates to boost your profile and prove your expertise.
+                Self-paced programs that let you go deeper into a focused skill.
+                Earn recognized certificates to boost your profile and prove
+                your expertise.
               </p>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 mt-1">🎯</span>
-                  <span className="text-gray-700">4–8 weeks (flexible, self-paced)</span>
+                  <span className="text-gray-700">
+                    4–8 weeks (flexible, self-paced)
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 mt-1">📍</span>
-                  <span className="text-gray-700">Online with recorded lectures</span>
+                  <span className="text-gray-700">
+                    Online with recorded lectures
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 mt-1">📜</span>
-                  <span className="text-gray-700">AltSchool Nano-Diploma certificate</span>
+                  <span className="text-gray-700">
+                    AltSchool Nano-Diploma certificate
+                  </span>
                 </div>
               </div>
 
@@ -85,7 +97,9 @@ export default function Home() {
               </div>
 
               <p className="text-gray-700 mb-8 leading-relaxed">
-                A comprehensive, instructor-led program with community and mentorship support. In 12 months, you'll master a new career path and open global opportunities.
+                A comprehensive, instructor-led program with community and
+                mentorship support. In 12 months, you&apos;ll master a new
+                career path and open global opportunities.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -95,11 +109,15 @@ export default function Home() {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 mt-1">📍</span>
-                  <span className="text-gray-700">Live classes + recorded lectures</span>
+                  <span className="text-gray-700">
+                    Live classes + recorded lectures
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 mt-1">📜</span>
-                  <span className="text-gray-700">AltSchool Diploma certificate</span>
+                  <span className="text-gray-700">
+                    AltSchool Diploma certificate
+                  </span>
                 </div>
               </div>
 
@@ -113,11 +131,15 @@ export default function Home() {
                 <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
                   <span className="text-blue-600 text-xl">💙</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900">Masterclass</h3>
+                <h3 className="text-2xl font-bold text-gray-900">
+                  Masterclass
+                </h3>
               </div>
 
               <p className="text-gray-700 mb-8 leading-relaxed">
-                Bite-sized sessions on practical topics to give you quick wins in your career. Perfect for busy professionals who want immediate results.
+                Bite-sized sessions on practical topics to give you quick wins
+                in your career. Perfect for busy professionals who want
+                immediate results.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -127,7 +149,9 @@ export default function Home() {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 mt-1">📍</span>
-                  <span className="text-gray-700">Physical/Online, Live Sessions</span>
+                  <span className="text-gray-700">
+                    Physical/Online, Live Sessions
+                  </span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-blue-600 mt-1">📜</span>
@@ -149,38 +173,69 @@ export default function Home() {
             Our Schools
           </h2>
           <p className="text-center text-gray-700 text-lg max-w-3xl mx-auto mb-16">
-            We ensure that Africans interested in exploring various occupations can readily access the resources they need to learn and grow
+            We ensure that Africans interested in exploring various occupations
+            can readily access the resources they need to learn and grow
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             <div className="relative group cursor-pointer overflow-hidden rounded-2xl aspect-square">
-              <img src="/images/engineer.jpg" alt="Engineering" className="w-full h-full object-cover group-hover:scale-110 transition duration-300" />
+              <img
+                src="/images/engineer.jpg"
+                alt="Engineering"
+                className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-              <h3 className="absolute bottom-6 left-6 right-6 text-white text-2xl font-bold">Engineering</h3>
+              <h3 className="absolute bottom-6 left-6 right-6 text-white text-2xl font-bold">
+                Engineering
+              </h3>
             </div>
 
             <div className="relative group cursor-pointer overflow-hidden rounded-2xl aspect-square">
-              <img src="/images/data.jpg" alt="Data" className="w-full h-full object-cover group-hover:scale-110 transition duration-300" />
+              <img
+                src="/images/data.jpg"
+                alt="Data"
+                className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-              <h3 className="absolute bottom-6 left-6 right-6 text-white text-2xl font-bold">Data</h3>
+              <h3 className="absolute bottom-6 left-6 right-6 text-white text-2xl font-bold">
+                Data
+              </h3>
             </div>
 
             <div className="relative group cursor-pointer overflow-hidden rounded-2xl aspect-square">
-              <img src="/images/product.jpg" alt="Product" className="w-full h-full object-cover group-hover:scale-110 transition duration-300" />
+              <img
+                src="/images/product.jpg"
+                alt="Product"
+                className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-              <h3 className="absolute bottom-6 left-6 right-6 text-white text-2xl font-bold">Product</h3>
+              <h3 className="absolute bottom-6 left-6 right-6 text-white text-2xl font-bold">
+                Product
+              </h3>
             </div>
 
             <div className="relative group cursor-pointer overflow-hidden rounded-2xl aspect-square">
-              <img src="/images/creative.jpg" alt="Creative Economy" className="w-full h-full object-cover group-hover:scale-110 transition duration-300" />
+              <img
+                src="/images/creative.jpg"
+                alt="Creative Economy"
+                className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-              <h3 className="absolute bottom-6 left-6 right-6 text-white text-2xl font-bold">Creative Economy</h3>
+              <h3 className="absolute bottom-6 left-6 right-6 text-white text-2xl font-bold">
+                Creative Economy
+              </h3>
             </div>
 
             <div className="relative group cursor-pointer overflow-hidden rounded-2xl aspect-square">
-              <img src="/images/business.jpg" alt="Business" className="w-full h-full object-cover group-hover:scale-110 transition duration-300" />
+              <img
+                src="/images/business.jpg"
+                alt="Business"
+                className="w-full h-full object-cover group-hover:scale-110 transition duration-300"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-              <h3 className="absolute bottom-6 left-6 right-6 text-white text-2xl font-bold">Business</h3>
+              <h3 className="absolute bottom-6 left-6 right-6 text-white text-2xl font-bold">
+                Business
+              </h3>
             </div>
           </div>
         </div>

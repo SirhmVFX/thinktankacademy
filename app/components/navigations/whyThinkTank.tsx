@@ -23,7 +23,7 @@ export default function WhyThinkTank() {
           <ul>
             <li>
               <Link
-                href="/our-story"
+                href="/why-thinktank"
                 className="block px-4 py-3 hover:bg-blue-100"
                 onClick={() => setOpen(false)}
               >
