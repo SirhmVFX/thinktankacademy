@@ -1,4 +1,7 @@
 import BlogSection from "./components/home/blog-section";
+import ThinkTankCTA from "./components/home/introducing-thinktank";
+import TrendingPrograms from "./components/home/trending-program";
+import WhyThinkTankSchool from "./components/home/why-thinkTank-school";
 
 export default function Home() {
   return (
@@ -182,6 +185,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <ThinkTankCTA />
+      <TrendingPrograms />
+      <WhyThinkTankSchool />
       <BlogSection />
     </div>
   );
