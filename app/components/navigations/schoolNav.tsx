@@ -27,7 +27,7 @@ export default function SchoolsDropdown() {
               <ul className="space-y-4">
                 <li>
                   <Link
-                    href="/schools/engineering"
+                    href="../../schools/engineering"
                     className="flex items-center gap-3 hover:text-blue-600"
                     onClick={() => setOpen(false)}
                   >
@@ -36,7 +36,7 @@ export default function SchoolsDropdown() {
                 </li>
                 <li>
                   <Link
-                    href="/schools/product"
+                    href="../../schools/product"
                     className="flex items-center gap-3 hover:text-blue-600"
                     onClick={() => setOpen(false)}
                   >
@@ -45,7 +45,7 @@ export default function SchoolsDropdown() {
                 </li>
                 <li>
                   <Link
-                    href="/schools/data"
+                    href="../../schools/data"
                     className="flex items-center gap-3 hover:text-blue-600"
                     onClick={() => setOpen(false)}
                   >
@@ -79,11 +79,11 @@ export default function SchoolsDropdown() {
               </h3>
               <ul className="space-y-3">
                 {[
-                  ["Javascript for Beginners", "/programs/javascript"],
-                  ["Frontend Engineering", "/programs/frontend"],
-                  ["Backend Engineering", "/programs/backend"],
-                  ["Cloud Engineering", "/programs/cloud"],
-                  ["Cyber Security", "/programs/cyber-security"],
+                  ["Javascript for Beginners", "/"],
+                  ["Frontend Engineering", "../../schools/frontend"],
+                  ["Backend Engineering", "../../schools/backend"],
+                  ["Cloud Engineering", "../../schools/cloud"],
+                  ["Cyber Security", "../../schools/cybersecurity"],
                   ["Music Business and Afrobeats", "/programs/music-business"],
                   ["Content Creation", "/programs/content-creation"],
                   ["Sales", "/programs/sales"],
