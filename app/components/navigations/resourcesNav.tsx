@@ -23,7 +23,7 @@ export default function ResourcesNav() {
           <ul>
             <li>
               <Link
-                href="/our-story"
+                href="/scholarship"
                 className="block px-4 py-3 hover:bg-blue-100"
                 onClick={() => setOpen(false)}
               >
@@ -63,7 +63,7 @@ export default function ResourcesNav() {
 
             <li>
               <Link
-                href="/blog"
+                href="/FAQ"
                 className="block px-4 py-3 hover:bg-blue-100"
                 onClick={() => setOpen(false)}
               >

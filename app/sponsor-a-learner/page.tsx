@@ -1,350 +1,230 @@
 "use client";
 
-import Image from "next/image";
+import React, { useRef } from 'react';
 import { useRouter } from "next/navigation";
-import { useRef } from "react";
+import { 
+  CheckCircle2, 
+  ArrowRight, 
+  ExternalLink, 
+  Users, 
+  Target, 
+  Zap, 
+  Star,
+  Quote
+} from 'lucide-react';
+
+const STATS = [
+  { number: "10M", label: "Target skilled by 2030", icon: <Target className="w-6 h-6" /> },
+  { number: "60K+", label: "Enrolled Learners", icon: <Users className="w-6 h-6" /> },
+  { number: "100%", label: "Practical Focus", icon: <Zap className="w-6 h-6" /> },
+  { number: "20K+", label: "Beneficiaries", icon: <Star className="w-6 h-6" /> },
+];
+
+const SCHOLARSHIPS = [
+  {
+    id: 1,
+    name: "Toluwaloope Scholarship Fund",
+    status: "Application Open",
+    description: "Designed for students who have passed entrance exams and show exceptional promise.",
+    color: "from-blue-600 to-indigo-700",
+  },
+  {
+    id: 2,
+    name: "Luno Scholarship Fund",
+    status: "Closed",
+    description: "Empowering the next generation of blockchain and crypto experts across Africa.",
+    color: "from-purple-600 to-fuchsia-700",
+  },
+  {
+    id: 3,
+    name: "Binance Scholarship Fund",
+    status: "Application Open",
+    description: "Full-tuition support for 500 young Africans in tech and creative schools.",
+    color: "from-yellow-500 to-orange-600",
+  }
+];
 
 export default function SponsorALearner() {
   const router = useRouter();
-  const sponsorshipRef = useRef<HTMLElement>(null);
+  const scholarshipRef = useRef<HTMLElement>(null);
 
   const handleSponsorClick = () => {
-    sponsorshipRef.current?.scrollIntoView({ behavior: "smooth" });
+    scholarshipRef.current?.scrollIntoView({ behavior: "smooth" });
   };
-
-  const handleContactUs = () => {
-    router.push("mailto:business@altschoolafrica.com");
-  };
-
-  const handleDonation = () => {
-    router.push("/donation");
-  };
-
-  const stats = [
-    {
-      number: "10,000,000",
-      description: "Africans will be skilled by 2030",
-      icon: "🎯",
-    },
-    {
-      number: "60,000+",
-      description: "Learners already enrolled",
-      icon: "👥",
-    },
-    {
-      number: "100%",
-      description: "Practical curriculum",
-      icon: "⚡",
-    },
-    {
-      number: "20,000+",
-      description: "Beneficiaries supported",
-      icon: "🌟",
-    },
-  ];
-
-  const sponsors = [
-    { name: "Don Jazzy", image: "/sponsors/don-jazzy.jpg" },
-    { name: "Sani Yusuf", image: "/sponsors/sani-yusuf.jpg" },
-    { name: "Karen Chukwu", image: "/sponsors/karen-chukwu.jpg" },
-    { name: "Ruby Laren", image: "/sponsors/ruby-laren.jpg" },
-    { name: "Falz", image: "/sponsors/falz.jpg" },
-    { name: "Glory Emanerame", image: "/sponsors/glory-emanerame.jpg" },
-    { name: "Bowale Odumade", image: "/sponsors/bowale-odumade.jpg" },
-    { name: "Oluebube Princess Egbuna", image: "/sponsors/oluebube-egbuna.jpg" },
-  ];
-
-  const studentStories = [
-    {
-      name: "Chibuzo Obiano",
-      date: "Jun 30, 2023",
-      story:
-        "Thank you very much to the entire team. Your selflessness, kindness and generosity made this possible. Your support has transformed my journey.",
-    },
-    {
-      name: "Ebere Ugochukwu",
-      date: "Aug 23, 2025",
-      story:
-        "My deepest gratitude for selecting me as a recipient of the scholarship award. This generous support is more than financial assistance. It is an investment in my future.",
-    },
-    {
-      name: "Blessing-Ojo Adeniyi",
-      date: "Jun 30, 2023",
-      story:
-        "I am deeply grateful for giving me the opportunity to pursue my journey. This experience has been life-changing and equipped me with valuable knowledge and skills.",
-    },
-    {
-      name: "Cynthia Edejon",
-      date: "Aug 23, 2025",
-      story:
-        "This scholarship has been more than financial support. It is a stepping stone that has changed the way I see myself and my future.",
-    },
-  ];
-
-  const corporateSponsors = [
-    { name: "Vesicash", image: "/sponsors/vesicash.svg" },
-    { name: "Partner 2", image: "/sponsors/partner2.svg" },
-    { name: "Partner 3", image: "/sponsors/partner3.svg" },
-  ];
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-indigo-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6">
-            SPONSOR A LEARNER
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mb-8">
-            Give learners the chance to build skills that transform generations
-          </p>
-          <button onClick={handleSponsorClick} className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer">
-            Sponsor a Learner
-          </button>
+    <div className="min-h-screen bg-white text-slate-900 selection:bg-blue-100">
+      
+      {/* --- HERO SECTION --- */}
+      <section className="relative bg-[#020817] pt-32 pb-24 overflow-hidden">
+        {/* Animated Background Gradients */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px]" />
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+              </span>
+              Impact the future
+            </div>
+            <h1 className="text-5xl md:text-7xl font-black text-white mb-8 tracking-tight leading-[1.1]">
+              Educate One. <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400">
+                Empower Thousands.
+              </span>
+            </h1>
+            <p className="text-lg md:text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl">
+              Our scholarships have helped tens of thousands of people globally. 
+              Give a learner the chance to build skills that transform generations.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <button 
+                onClick={handleSponsorClick}
+                className="group relative px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold transition-all hover:scale-[1.02] active:scale-[0.98]"
+              >
+                Become a Sponsor
+                <ArrowRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </button>
+              <button className="px-8 py-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-xl font-bold transition-all">
+                View Impact Report
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div
-                key={index}
-                className="text-center p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow"
-              >
-                <div className="text-4xl mb-4">{stat.icon}</div>
-                <h3 className="text-3xl font-bold text-indigo-600 mb-2">
-                  {stat.number}
-                </h3>
-                <p className="text-gray-600">{stat.description}</p>
+      {/* --- STATS SECTION --- */}
+      <section className="relative -mt-12 z-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 bg-white p-8 md:p-12 rounded-[2rem] shadow-2xl shadow-slate-200 border border-slate-100">
+            {STATS.map((stat, i) => (
+              <div key={i} className="flex flex-col items-center md:items-start text-center md:text-left">
+                <div className="w-12 h-12 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600 mb-4">
+                  {stat.icon}
+                </div>
+                <h3 className="text-3xl font-black text-slate-900 mb-1">{stat.number}</h3>
+                <p className="text-sm font-medium text-slate-500 uppercase tracking-wide leading-tight">
+                  {stat.label}
+                </p>
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="mt-12 bg-blue-50 p-8 rounded-lg">
-            <p className="text-lg text-gray-700 font-semibold mb-2">
-              These aren't just stats
-            </p>
-            <p className="text-gray-600">
-              They're proof that your support rides on a platform that works
-            </p>
+      {/* --- SCHOLARSHIP GRID --- */}
+      <section ref={scholarshipRef} className="py-24 px-6 bg-slate-50/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
+            <div className="max-w-xl">
+              <h2 className="text-4xl font-black text-slate-900 mb-4">Available Funds</h2>
+              <p className="text-slate-600 text-lg">Every day you wait, a learner waits too. Support one of our specialized tracks today.</p>
+            </div>
+            <button className="text-blue-600 font-bold flex items-center gap-2 hover:gap-3 transition-all">
+              View all 5,000+ applicants <ArrowRight className="w-5 h-5" />
+            </button>
           </div>
-        </div>
-      </section>
 
-      {/* CTA Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-indigo-600 to-blue-600">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Educate One. Empower Thousands.
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Our scholarships have helped tens of thousands of people globally and that number keeps
-            growing every day.
-          </p>
-          <button onClick={handleSponsorClick} className="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors cursor-pointer">
-            BECOME A SPONSOR
-          </button>
-        </div>
-      </section>
-
-      {/* Why Think Tank Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12">Why Think Tank Academy?</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-4xl mb-4">🎓</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Trained thousands of learners across the continent
-              </h3>
-              <p className="text-gray-600">
-                Think Tank Academy has equipped students with in-demand skills in tech, business,
-                and creativity.
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-4xl mb-4">🚀</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Helped students launch new careers and start companies
-              </h3>
-              <p className="text-gray-600">
-                Our graduates are building the future and transforming industries across Africa.
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-4xl mb-4">🌍</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                Uplifting communities across Africa
-              </h3>
-              <p className="text-gray-600">
-                Every learner we support creates a ripple effect, empowering families and
-                communities.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How Sponsorship Works */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12">How Sponsorship Works</h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bg-gradient-to-br from-indigo-50 to-blue-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Sponsor Individual Learners</h3>
-              <p className="text-gray-700 mb-6">
-                With as little as ₦435,000 / $290, you can fund a learner's access to
-                world-class education and mentorship for a full year.
-              </p>
-              <p className="text-gray-600 mb-6">
-                You'll receive personal updates, progress reports, and stories of transformation
-                from the learners you support.
-              </p>
-              <button onClick={handleContactUs} className="bg-indigo-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-indigo-700 transition-colors cursor-pointer">
-                Talk to us
-              </button>
-            </div>
-
-            <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Partner as an Organization</h3>
-              <p className="text-gray-700 mb-6">
-                Join global brands who are transforming Africa's workforce by investing in
-                education.
-              </p>
-              <p className="text-gray-600 mb-6">
-                We'll work with your company to design a scholarship program that reflects your
-                brand's values and impact goals.
-              </p>
-              <button onClick={handleContactUs} className="bg-green-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-700 transition-colors cursor-pointer">
-                Talk to us
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Individual Sponsors Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12">Some of Our Individual Sponsors</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {sponsors.map((sponsor, index) => (
-              <div
-                key={index}
-                className="text-center group cursor-pointer hover:scale-105 transition-transform"
-              >
-                <div className="bg-gray-200 w-full aspect-square rounded-lg mb-3 flex items-center justify-center overflow-hidden">
-                  <span className="text-gray-500 font-semibold text-sm px-2 text-center">
-                    {sponsor.name}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {SCHOLARSHIPS.map((fund) => (
+              <div key={fund.id} className="group bg-white rounded-[2.5rem] p-8 border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col">
+                <div className={`w-16 h-16 bg-gradient-to-br ${fund.color} rounded-2xl mb-8 flex items-center justify-center text-white shadow-lg group-hover:rotate-6 transition-transform`}>
+                   <ExternalLink size={28} />
+                </div>
+                <div className="mb-6">
+                  <span className={`text-[10px] font-black uppercase tracking-[0.2em] px-3 py-1.5 rounded-full ${fund.status === 'Closed' ? 'bg-rose-50 text-rose-600' : 'bg-emerald-50 text-emerald-600'}`}>
+                    {fund.status}
                   </span>
                 </div>
-                <p className="text-sm font-semibold text-gray-900">{sponsor.name}</p>
+                <h3 className="text-2xl font-bold mb-4 leading-tight group-hover:text-blue-600 transition-colors">
+                  {fund.name}
+                </h3>
+                <p className="text-slate-500 leading-relaxed mb-10">
+                  {fund.description}
+                </p>
+                <button className="mt-auto w-full py-4 bg-slate-50 group-hover:bg-blue-600 group-hover:text-white text-slate-900 rounded-2xl font-bold text-sm transition-all flex items-center justify-center gap-2">
+                  Sponsor Fund <ArrowRight size={18} />
+                </button>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Corporate Sponsors Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12">Some of Our Corporate Sponsors</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 items-center justify-items-center">
-            {corporateSponsors.map((sponsor, index) => (
-              <div
-                key={index}
-                className="w-full max-w-xs bg-gray-50 p-6 rounded-lg flex items-center justify-center h-24"
-              >
-                <p className="font-semibold text-gray-600">{sponsor.name}</p>
+      {/* --- ELIGIBILITY: THE BENTO BOX --- */}
+      <section className="py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-blue-600 rounded-[3.5rem] p-8 md:p-20 text-white relative overflow-hidden shadow-2xl">
+            <div className="relative z-10 grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight">General Eligibility <br/> Criteria</h2>
+                <div className="space-y-6">
+                  {[
+                    "Score 85%+ in Entrance Assessment",
+                    "Resident of an African country",
+                    "Aged between 18 - 35 years",
+                    "Commitment to 12 months training",
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-4 text-lg">
+                      <div className="bg-white/20 p-1 rounded-full">
+                        <CheckCircle2 className="text-blue-100" size={20} />
+                      </div>
+                      <span className="font-medium text-blue-50">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
+              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-8 md:p-12 rounded-[2.5rem]">
+                <h4 className="text-2xl font-bold mb-4">Why we screen?</h4>
+                <p className="text-blue-100 leading-relaxed mb-8">
+                  We ensure that every sponsored dollar goes to a learner with the grit and capability to finish the program.
+                </p>
+                <button className="w-full py-4 bg-white text-blue-600 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-blue-50 transition-colors">
+                  Take Assessment
+                </button>
+              </div>
+            </div>
+            {/* Background flourish */}
+            <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/5 to-transparent pointer-events-none" />
           </div>
         </div>
       </section>
 
-      {/* Who We Offer Scholarships To */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-indigo-600 to-blue-600">
-        <div className="max-w-6xl mx-auto text-center text-white">
-          <h2 className="text-4xl font-bold mb-6">WHO WE OFFER SCHOLARSHIPS TO</h2>
-          <p className="text-2xl font-semibold mb-6">
-            Hundreds have applied. 5,000+ still need sponsors.
-          </p>
-          <p className="text-lg mb-8">
-            Every day you wait, a learner waits too for someone to believe in their dreams and
-            invest in their journey
-          </p>
-          <p className="text-lg mb-8">
-            You can be the reason one more African gets a fair chance at the future.
-          </p>
-        </div>
-      </section>
-
-      {/* Student Success Stories */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 mb-12">Student Success Stories</h2>
-          <p className="text-lg text-gray-600 mb-12">
-            Every sponsorship creates a ripple empowering one learner who, in turn, uplifts
-            families, communities, and entire industries.
-          </p>
-
+      {/* --- TESTIMONIALS --- */}
+      <section className="py-24 px-6 bg-slate-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-black mb-4">Stories of Transformation</h2>
+            <p className="text-slate-600">Real impact, real people, real change.</p>
+          </div>
           <div className="grid md:grid-cols-2 gap-8">
-            {studentStories.map((story, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-lg hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{story.name}</h3>
-                <p className="text-sm text-gray-500 mb-4">{story.date}</p>
-                <p className="text-gray-700 leading-relaxed">{story.story}</p>
+            {[
+              { name: "Chibuzo Obiano", story: "Your support has transformed my journey. I went from zero coding knowledge to building full-stack apps." },
+              { name: "Ebere Ugochukwu", story: "This is more than financial assistance. It is an investment in my future that I don't take for granted." }
+            ].map((story, i) => (
+              <div key={i} className="bg-white p-10 rounded-[2.5rem] border border-slate-100 shadow-sm relative">
+                <Quote className="absolute top-8 right-10 text-blue-100 w-12 h-12" />
+                <h3 className="font-bold text-xl mb-4">{story.name}</h3>
+                <p className="text-slate-600 italic leading-relaxed">"{story.story}"</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Closing CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-indigo-600 to-blue-600">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-4">
-            Your contribution doesn't just fund education
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            It funds dignity, purpose, and growth.
-          </p>
-          <button onClick={handleDonation} className="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors cursor-pointer">
-            Sponsor a Learner Now
-          </button>
-        </div>
-      </section>
-
-      {/* Every Contribution Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Every contribution moves Africa closer to equitable access to education
-          </h2>
-          <p className="text-lg text-gray-600">
-            Join our community of sponsors and be part of the transformation
-          </p>
-        </div>
-      </section>
-
-      {/* Accreditation Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 text-center">
-            <div>
-              <p className="text-sm font-semibold text-gray-600 mb-2">ACCREDITED BY</p>
-              <p className="text-gray-700">
-                ASIC (Accreditation Service for International Schools, Colleges, and Universities)
-              </p>
-            </div>
-            <div>
-              <p className="text-sm font-semibold text-gray-600 mb-2">RECOGNIZED AS</p>
-              <p className="text-gray-700">
-                GSV CUP ELITE 200. World's most innovative Edtech startups '23
-              </p>
-            </div>
+      {/* --- FOOTER LOGOS --- */}
+      <section className="py-16 px-6 border-t border-slate-100">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 opacity-50 grayscale hover:grayscale-0 transition-all">
+          <div className="text-center md:text-left">
+            <p className="text-xs font-black uppercase tracking-[0.3em] mb-4 text-slate-500">Accredited by</p>
+            <span className="text-xl font-black text-slate-900">ASIC UK</span>
+          </div>
+          <div className="text-center md:text-right">
+            <p className="text-xs font-black uppercase tracking-[0.3em] mb-4 text-slate-500">Recognized as</p>
+            <span className="text-xl font-black text-slate-900">GSV ELITE 200</span>
           </div>
         </div>
       </section>
