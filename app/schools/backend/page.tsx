@@ -32,7 +32,7 @@ const frontendPageData = {
   ],
   overview: {
     videoTitle: "Introduction To Backend",
-    videoSubtitle: "AltSchool Africa",
+    videoSubtitle: "Thinktank Africa",
     aboutTitle: "About the program",
     aboutDescription:
       "Become a sought-after Backend Engineer! Gain in-depth knowledge to create functional websites using programming languages. With hands-on experience and project execution, guided by our esteemed faculty of top senior engineers, you'll be prepared to excel in this exciting field and make a lasting impact in the world of web development. Join us and unlock your potential as a Backend Engineer!",
@@ -114,7 +114,7 @@ const frontendPageData = {
   scholarshipInfo: {
     title: "Scholarship Information",
     description:
-      "AltSchool Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
+      "Thinktank Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
     buttonText: "Apply for Scholarship",
   },
 };

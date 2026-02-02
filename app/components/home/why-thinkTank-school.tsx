@@ -96,7 +96,7 @@ export default function HomePage() {
               <div>
                 <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wider mb-6">
                   <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
-                  WHY ALTSCHOOL
+                  WHY Thinktank
                 </div>
                 
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -262,7 +262,7 @@ export default function HomePage() {
               <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-2xl">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Where we are headed</h3>
                 <p className="text-gray-600 mb-6">
-                  Like the name suggests, AltSchool Africa offers a more effective "alternative" to traditional 
+                  Like the name suggests, Thinktank Africa offers a more effective "alternative" to traditional 
                   academic institutions, in that it explores and offers practical & functional learning with 
                   the aid of modern technology.
                 </p>
@@ -308,12 +308,12 @@ export default function HomePage() {
       <section className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <div className="text-3xl font-bold text-gray-900 mb-8">
-            "At AltSchool, our curriculum isn't just about imparting skills and knowledge, 
+            "At Thinktank, our curriculum isn't just about imparting skills and knowledge, 
             it's about shaping the people who shape the future."
           </div>
           <div className="mt-12">
             <div className="text-xl font-semibold text-gray-900">Adewale Yusuf</div>
-            <div className="text-gray-600">CEO / Founder, AltSchool Africa</div>
+            <div className="text-gray-600">CEO / Founder, Thinktank Africa</div>
           </div>
         </div>
       </section>

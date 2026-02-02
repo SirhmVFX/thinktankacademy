@@ -32,7 +32,7 @@ const frontendPageData = {
   ],
   overview: {
     videoTitle: "Introduction To Cloud Engineering",
-    videoSubtitle: "AltSchool Africa",
+    videoSubtitle: "Thinktank Africa",
     aboutTitle: "About the program",
     aboutDescription:
       "Cloud Engineering merges software development and IT operations to construct and manage cloud infrastructure. The demand for Cloud Engineers is surging, with companies increasingly migrating crucial processes and applications to cloud platforms. In this program, you'll gain practical experience with various cloud platforms, master cloud resource allocation, cost management, and streamline systems development life-cycle for optimal efficiency. Join us and unlock your potential as a Cloud Engineer!",
@@ -115,7 +115,7 @@ const frontendPageData = {
   scholarshipInfo: {
     title: "Scholarship Information",
     description:
-      "AltSchool Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
+      "Thinktank Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
     buttonText: "Apply for Scholarship",
   },
 };

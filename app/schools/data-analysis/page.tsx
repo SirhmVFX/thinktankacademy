@@ -14,7 +14,7 @@ import {
 const frontendPageData = {
   hero: {
     title: "Data Analysis",
-    backgroundImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1920&h=1080&fit=crop",
+    backgroundImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
     programInfo: {
       school: "School of Engineering",
       certificate: "Diploma",
@@ -34,7 +34,7 @@ const frontendPageData = {
   ],
   overview: {
     videoTitle: "Introduction To Data Analysis",
-    videoSubtitle: "AltSchool Africa",
+    videoSubtitle: "Thinktank Africa",
     aboutTitle: "About the program",
     aboutDescription:
       "The Data Analysis program empowers learners with the essential skills to extract valuable insights from raw data and make data-driven decisions. Dive into statistical analysis, data visualization, and storytelling with data. Master industry-leading tools and techniques, and gain hands-on experience with real-world datasets. Prepare for a rewarding career as a proficient data analyst in various industries. Enroll now to unleash the power of data and drive success with data-driven strategies.",
@@ -115,7 +115,7 @@ const frontendPageData = {
   scholarshipInfo: {
     title: "Scholarship Information",
     description:
-      "AltSchool Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
+      "Thinktank Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
     buttonText: "Apply for Scholarship",
   },
 };

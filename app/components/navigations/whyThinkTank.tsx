@@ -12,7 +12,7 @@ export default function WhyThinkTank() {
         onClick={() => setOpen(!open)}
         className="flex items-center gap-1 hover:text-gray-300"
       >
-        Why AltSchool
+        Why Thinktank
         <span className={`transition-transform ${open ? "rotate-180" : ""}`}>
           ▾
         </span>

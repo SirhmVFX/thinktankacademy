@@ -13,7 +13,7 @@ import {
 const frontendPageData = {
   hero: {
     title: "Product Management",
-    backgroundImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1920&h=1080&fit=crop",
+    backgroundImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800",
     programInfo: {
       school: "School of Engineering",
       certificate: "Diploma",
@@ -33,7 +33,7 @@ const frontendPageData = {
   ],
   overview: {
     videoTitle: "Introduction To Product Design",
-    videoSubtitle: "AltSchool Africa",
+    videoSubtitle: "Thinktank Africa",
     aboutTitle: "About the program",
     aboutDescription:
       "Product Managers are creative masterminds. This course will take you through the basic principles of designing products that address user needs and align with business goals. Product design involves the entire process of researching and identifying user problems, crafting a solution to address these deficiencies and validating this solution with the end-users. Enroll now to shape impactful products and drive your career forward.",
@@ -116,7 +116,7 @@ const frontendPageData = {
   scholarshipInfo: {
     title: "Scholarship Information",
     description:
-      "AltSchool Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
+      "Thinktank Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
     buttonText: "Apply for Scholarship",
   },
 };

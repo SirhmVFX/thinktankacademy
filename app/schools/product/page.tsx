@@ -14,12 +14,12 @@ const pageData = {
     buttonText: "Start Learning",
     buttonLink: "/apply",
     image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600",
+      "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=1600", // UI/UX design workspace
   },
 
   videoInfo: {
     videoTitle: "Welcome to the School of Product!",
-    videoSubtitle: "AltSchool Africa",
+    videoSubtitle: "Thinktank Africa",
     infoTitle: "The School of Product",
     infoDescription:
       "The School of Product offers hands-on courses designed to help learners build, manage, and design impactful products that solve real-world problems.",
@@ -37,7 +37,7 @@ const pageData = {
         description:
           "Learn the principles of designing user-centered products that align with business goals.",
         image:
-          "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800",
+          "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800", // UX design wireframes
         link: "/schools/product-design",
       },
       {
@@ -45,7 +45,7 @@ const pageData = {
         description:
           "Master visual communication and branding techniques for digital products.",
         image:
-          "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800",
+          "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800", // Graphic design tools
         link: "/schools/graphics-design",
       },
       {
@@ -53,7 +53,7 @@ const pageData = {
         description:
           "Gain essential product management skills including market research, strategy, and stakeholder communication.",
         image:
-          "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800",
+          "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800", // Team collaboration/planning
         link: "/schools/product-management",
       },
     ],
@@ -76,7 +76,7 @@ const pageData = {
         role: "Product Design Intern",
         company: "@Fort Tyres",
         testimonial:
-          "AltSchool Africa came in with an opportunity of a lifetime.",
+          "Thinktank Africa came in with an opportunity of a lifetime.",
         image:
           "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
       },
@@ -85,7 +85,7 @@ const pageData = {
         role: "Product Designer",
         company: "@Ourpass",
         testimonial:
-          "AltSchool helped me transition smoothly into product design.",
+          "Thinktank helped me transition smoothly into product design.",
         image:
           "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400",
       },
@@ -94,7 +94,7 @@ const pageData = {
         role: "Product Manager",
         company: "@Octosoft Tech LTD",
         testimonial:
-          "AltSchool Africa played a huge role in my product career growth.",
+          "Thinktank Africa played a huge role in my product career growth.",
         image:
           "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400",
       },
@@ -107,7 +107,7 @@ const pageData = {
       "Scholarships are available for students who successfully pass our entrance exams.",
     buttonText: "Learn more",
     image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800",
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800", // Students learning/studying
     link: "/scholarships",
   },
 };

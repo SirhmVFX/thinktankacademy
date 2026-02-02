@@ -39,12 +39,12 @@ export default function SponsorALearner() {
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900">
       
-      {/* 1. HERO SECTION - Replicating AltSchool Dark Branding */}
+      {/* 1. HERO SECTION - Replicating Thinktank Dark Branding */}
       <section className="bg-[#020817] text-white py-24 px-6">
         <div className="max-w-6xl mx-auto text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
             Unleash Your Potential with <br /> 
-            <span className="text-blue-500">AltSchool Scholarships</span>
+            <span className="text-blue-500">Thinktank Scholarships</span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl max-w-3xl mb-10 leading-relaxed">
             Education is the single most powerful equalizer of opportunity. Join us in shaping 

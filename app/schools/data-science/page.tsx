@@ -14,7 +14,7 @@ import {
 const frontendPageData = {
   hero: {
     title: "Data Science",
-    backgroundImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1920&h=1080&fit=crop",
+    backgroundImage: "https://images.unsplash.com/photo-1527474305487-b87b222841cc?w=800",
     programInfo: {
       school: "School of Engineering",
       certificate: "Diploma",
@@ -34,7 +34,7 @@ const frontendPageData = {
   ],
   overview: {
     videoTitle: "Introduction To Data Analysis",
-    videoSubtitle: "AltSchool Africa",
+    videoSubtitle: "Thinktank Africa",
     aboutTitle: "About the program",
     aboutDescription:
       "This program offers a comprehensive and practical learning experience, empowering participants to become proficient Data Scientists. The program covers essential topics in Data Science with hands-on practice using popular libraries like NumPy, SciPy, Pandas, and visualization tools. Learners will gain valuable skills in data cleaning, mining, and analysis. From regression and decision trees to neural networks and recommendation systems, participants will develop expertise in diverse data science methodologies.",
@@ -119,7 +119,7 @@ const frontendPageData = {
   scholarshipInfo: {
     title: "Scholarship Information",
     description:
-      "AltSchool Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
+      "Thinktank Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
     buttonText: "Apply for Scholarship",
   },
 };

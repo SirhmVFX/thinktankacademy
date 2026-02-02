@@ -32,7 +32,7 @@ const frontendPageData = {
   ],
   overview: {
     videoTitle: "Introduction To Cybersecurity",
-    videoSubtitle: "AltSchool Africa",
+    videoSubtitle: "Thinktank Africa",
     aboutTitle: "About the program",
     aboutDescription:
       "Kickstart your career in Cybersecurity with our beginner-friendly program. An estimated 3.5 million cybersecurity jobs are unclaimed worldwide, signalling the availability of rewarding opportunities for skilled talent. In this program, you will be well-equipped to enter the workforce with a solid foundation in both theoretical and practical aspects of cybersecurity, with no degree or prior experience required. Enrol in this program now and begin your journey to becoming a cybersecurity expert!",
@@ -117,7 +117,7 @@ const frontendPageData = {
   scholarshipInfo: {
     title: "Scholarship Information",
     description:
-      "AltSchool Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
+      "Thinktank Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
     buttonText: "Apply for Scholarship",
   },
 };

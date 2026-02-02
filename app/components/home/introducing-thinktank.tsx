@@ -27,7 +27,7 @@ export default function ThinkTankCTA() {
                   
                   <div className="relative bg-teal-500 rounded-2xl overflow-hidden shadow-2xl">
                     <img 
-                      src="/images/showingApp.jpg" 
+                      src="/images/stpc.jpg" 
                       alt="Student showcasing mobile app"
                       className="w-full h-full object-cover"
                     />

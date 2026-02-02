@@ -19,7 +19,7 @@ const pageData = {
 
   videoInfo: {
     videoTitle: "Welcome to the School of Engineering!",
-    videoSubtitle: "AltSchool Africa",
+    videoSubtitle: "Thinktank Africa",
     infoTitle: "The School of Engineering",
     infoDescription:
       "It offers a range of extensive technical courses designed to equip learners with job-ready skills globally.",
@@ -84,7 +84,7 @@ const pageData = {
         role: "Engineering Intern",
         company: "@Fort Tyres",
         testimonial:
-          "AltSchool Africa came in with an opportunity of a lifetime.",
+          "Thinktank Africa came in with an opportunity of a lifetime.",
         image:
           "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
       },
@@ -93,7 +93,7 @@ const pageData = {
         role: "Frontend Developer",
         company: "@Ourpass",
         testimonial:
-          "AltSchool helped me successfully transition into tech.",
+          "Thinktank helped me successfully transition into tech.",
         image:
           "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400",
       },
@@ -102,7 +102,7 @@ const pageData = {
         role: "Frontend Engineer",
         company: "@Octosoft Tech LTD",
         testimonial:
-          "AltSchool Africa played a huge role in my career growth.",
+          "Thinktank Africa played a huge role in my career growth.",
         image:
           "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400",
       },

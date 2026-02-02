@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="lg:col-span-1">
               <div className="flex items-center gap-2 mb-6">
                 <div className="text-white text-2xl font-bold">
-                  Alt<span className="block h-0.5 w-8 bg-white"></span>School
+                  Think<span className="block h-0.5 w-8 bg-white"></span>Tank
                 </div>
               </div>
 
@@ -27,11 +27,11 @@ export default function Footer() {
               </div>
 
               <div className="text-sm space-y-2">
-                <p>Email: support@altschoolafrica.com</p>
+                <p>Email: support@Thinktankafrica.com</p>
                 <p>Tel: +1737213187</p>
               </div>
 
-              <p className="text-sm mt-6">© 2026 AltSchool. All rights reserved</p>
+              <p className="text-sm mt-6">© 2026 Thinktank. All rights reserved</p>
             </div>
 
             <div>

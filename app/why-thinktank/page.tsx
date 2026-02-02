@@ -61,7 +61,7 @@ export default function WhyThinkTank() {
 
           <div className="relative animate-float">
             <div className="relative aspect-[4/5] w-full max-w-lg mx-auto rounded-[2.5rem] overflow-hidden shadow-2xl rotate-2">
-              <Image src="/career.png" alt="Team" fill className="object-cover" />
+              <Image src="/career.jpg" alt="Team" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent" />
             </div>
             {/* Floating Stats Card */}
@@ -86,24 +86,50 @@ export default function WhyThinkTank() {
       </section>
 
       {/* --- CORE VALUES: GLASS CARDS --- */}
-      <section className="py-24 px-6 max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-black text-center mb-16">Core Values</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {[
-            { title: "Excellence", desc: "Highest quality learning experiences in every module.", icon: <Trophy className="w-8 h-8" />, color: "bg-amber-500" },
-            { title: "Community", desc: "Power of collaboration to drive change across the continent.", icon: <Users className="w-8 h-8" />, color: "bg-blue-600" },
-            { title: "Innovation", desc: "Cutting-edge solutions that keep our learners ahead.", icon: <Lightbulb className="w-8 h-8" />, color: "bg-purple-600" }
-          ].map((val, i) => (
-            <div key={i} className="glass-card p-10 rounded-[2rem] hover:-translate-y-2 transition-all duration-500 group">
-              <div className={`${val.color} w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg group-hover:rotate-12 transition-transform`}>
-                {val.icon}
-              </div>
-              <h3 className="text-2xl font-bold mb-4">{val.title}</h3>
-              <p className="text-slate-500 dark:text-slate-400 leading-relaxed font-medium">{val.desc}</p>
+    <section className="py-24 px-6 max-w-7xl mx-auto">
+      <h2 className="text-4xl md:text-5xl font-black text-center mb-16 text-slate-900 dark:text-white">
+        Core Values
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          { 
+            title: "Excellence", 
+            desc: "Highest quality learning experiences in every module.", 
+            icon: <Trophy className="w-8 h-8" />, 
+            color: "bg-amber-500" 
+          },
+          { 
+            title: "Community", 
+            desc: "Power of collaboration to drive change across the continent.", 
+            icon: <Users className="w-8 h-8" />, 
+            color: "bg-blue-600" 
+          },
+          { 
+            title: "Innovation", 
+            desc: "Cutting-edge solutions that keep our learners ahead.", 
+            icon: <Lightbulb className="w-8 h-8" />, 
+            color: "bg-purple-600" 
+          }
+        ].map((val, i) => (
+          <div 
+            key={i} 
+            className="bg-white/80 dark:bg-slate-800/90 backdrop-blur-sm border border-slate-200 dark:border-slate-700 p-10 rounded-[2rem] hover:-translate-y-2 transition-all duration-500 group shadow-lg hover:shadow-2xl"
+          >
+            <div 
+              className={`${val.color} w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg group-hover:rotate-12 transition-transform`}
+            >
+              {val.icon}
             </div>
-          ))}
-        </div>
-      </section>
+            <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">
+              {val.title}
+            </h3>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed font-medium">
+              {val.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
 
       {/* --- IMPACT: BENTO GRID STYLE --- */}
       <section className="py-24 px-6 bg-slate-100 dark:bg-slate-900/30">

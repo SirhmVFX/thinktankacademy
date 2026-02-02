@@ -14,7 +14,7 @@ import {
 const frontendPageData = {
   hero: {
     title: "Data Engineering",
-    backgroundImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1920&h=1080&fit=crop",
+    backgroundImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
     programInfo: {
       school: "School of Engineering",
       certificate: "Diploma",
@@ -34,7 +34,7 @@ const frontendPageData = {
   ],
   overview: {
     videoTitle: "Introduction To Data Engineering",
-    videoSubtitle: "AltSchool Africa",
+    videoSubtitle: "Thinktank Africa",
     aboutTitle: "About the program",
     aboutDescription:
       "The Data Engineering program equips learners with essential skills in designing and managing robust data pipelines, ETL processes, and database management. Dive into the world of data infrastructure and learn to transform raw data into valuable insights. Gain hands-on experience with industry-relevant tools and technologies. Prepare for a successful career in data engineering and make a significant impact in the data-driven world. Enroll now to unlock your potential in this dynamic field.",
@@ -117,7 +117,7 @@ const frontendPageData = {
   scholarshipInfo: {
     title: "Scholarship Information",
     description:
-      "AltSchool Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
+      "Thinktank Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
     buttonText: "Apply for Scholarship",
   },
 };

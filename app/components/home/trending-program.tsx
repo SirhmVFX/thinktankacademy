@@ -42,7 +42,7 @@ export default function TrendingPrograms() {
     <section className="bg-white py-20 px-8">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
-          Trending Nano-Diploma programs on AltSchool
+          Trending Nano-Diploma programs on Thinktank
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">

@@ -13,7 +13,7 @@ import {
 const frontendPageData = {
   hero: {
     title: "Graphics Design",
-    backgroundImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1920&h=1080&fit=crop",
+    backgroundImage: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800",
     programInfo: {
       school: "School of Engineering",
       certificate: "Diploma",
@@ -33,7 +33,7 @@ const frontendPageData = {
   ],
   overview: {
     videoTitle: "Introduction To Graphics Design",
-    videoSubtitle: "AltSchool Africa",
+    videoSubtitle: "Thinktank Africa",
     aboutTitle: "About the program",
     aboutDescription:
       "Graphics Designers are creative masterminds. This course will take you through the basic principles of designing graphics that address user needs and align with business goals. Graphics design involves the entire process of researching and identifying user problems, crafting a solution to address these deficiencies and validating this solution with the end-users. Enroll now to shape impactful designs and drive your career forward.",
@@ -116,7 +116,7 @@ const frontendPageData = {
   scholarshipInfo: {
     title: "Scholarship Information",
     description:
-      "AltSchool Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
+      "Thinktank Scholarships are available for students who have successfully passed our entrance exams and meet the specific eligibility requirements of the scholarship funds they are interested in applying for. We believe in supporting talented individuals in their educational journey.",
     buttonText: "Apply for Scholarship",
   },
 };
